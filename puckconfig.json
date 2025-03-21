@@ -369,19 +369,6 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Server Tick Rate",
-        "Category": "Puck:stadia_controller",
-        "Subcategory": "Server:dns:1",
-        "Description": "Sets the server tick rate",
-        "Keywords": "tick,rate,server",
-        "FieldName": "tickRate",
-        "InputType": "number",
-        "ParamFieldName": "serverTickRate",
-        "DefaultValue": "120",
-        "Required": true,
-        "EnumValues": {}
-    },
-    {
         "DisplayName": "Install BepInEx",
         "Category": "Updates",
         "Subcategory": "Runtime Configuration:build:3",
