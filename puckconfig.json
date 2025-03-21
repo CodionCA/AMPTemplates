@@ -71,7 +71,7 @@
         "FieldName": "voip",
         "InputType": "checkbox",
         "ParamFieldName": "$.voip",
-        "DefaultValue": "false",
+        "DefaultValue": "true",
         "EnumValues": {
             "False": "false",
             "True": "true"
@@ -101,7 +101,7 @@
         "FieldName": "adminSteamIds",
         "InputType": "list",
         "ParamFieldName": "$.adminSteamIds",
-        "DefaultValue": "[]",
+        "DefaultValue": "[76561198280396869,76561199004874488,76561198096322130]",
         "Special": "array:text",
         "EnumValues": {}
     },
@@ -114,7 +114,7 @@
         "FieldName": "reloadBannedSteamIds",
         "InputType": "checkbox",
         "ParamFieldName": "$.reloadBannedSteamIds",
-        "DefaultValue": "false",
+        "DefaultValue": "true",
         "EnumValues": {
             "False": "false",
             "True": "true"
@@ -159,7 +159,7 @@
         "FieldName": "kickTimeout",
         "InputType": "number",
         "ParamFieldName": "$.kickTimeout",
-        "DefaultValue": "300",
+        "DefaultValue": "60",
         "Placeholder": "300",
         "Suffix": "seconds",
         "EnumValues": {}
@@ -187,7 +187,7 @@
         "FieldName": "joinMidMatchDelay",
         "InputType": "number",
         "ParamFieldName": "$.joinMidMatchDelay",
-        "DefaultValue": "10",
+        "DefaultValue": "5",
         "Placeholder": "10",
         "Suffix": "seconds",
         "EnumValues": {}
@@ -201,7 +201,7 @@
         "FieldName": "targetFrameRate",
         "InputType": "number",
         "ParamFieldName": "$.targetFrameRate",
-        "DefaultValue": "120",
+        "DefaultValue": "365",
         "Placeholder": "120",
         "Suffix": "fps",
         "EnumValues": {}
@@ -215,7 +215,7 @@
         "FieldName": "serverTickRate",
         "InputType": "number",
         "ParamFieldName": "$.serverTickRate",
-        "DefaultValue": "100",
+        "DefaultValue": "360",
         "Placeholder": "100",
         "Suffix": "tps",
         "EnumValues": {}
@@ -229,7 +229,7 @@
         "FieldName": "clientTickRate",
         "InputType": "number",
         "ParamFieldName": "$.clientTickRate",
-        "DefaultValue": "200",
+        "DefaultValue": "240",
         "Placeholder": "200",
         "Suffix": "tps",
         "EnumValues": {}
@@ -273,7 +273,7 @@
         "FieldName": "phaseDurationMap.Warmup",
         "InputType": "number",
         "ParamFieldName": "$.phaseDurationMap.Warmup",
-        "DefaultValue": "600",
+        "DefaultValue": "300",
         "Placeholder": "600",
         "EnumValues": {}
     },
@@ -312,7 +312,7 @@
         "FieldName": "phaseDurationMap.BlueScore",
         "InputType": "number",
         "ParamFieldName": "$.phaseDurationMap.BlueScore",
-        "DefaultValue": "5",
+        "DefaultValue": "2",
         "Placeholder": "5",
         "EnumValues": {}
     },
@@ -325,7 +325,7 @@
         "FieldName": "phaseDurationMap.RedScore",
         "InputType": "number",
         "ParamFieldName": "$.phaseDurationMap.RedScore",
-        "DefaultValue": "5",
+        "DefaultValue": "2",
         "Placeholder": "5",
         "EnumValues": {}
     },
@@ -379,7 +379,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "BepInExInstall",
         "IncludeInCommandLine": false,
-        "DefaultValue": "false",
+        "DefaultValue": "true",
         "EnumValues": {
             "False": "false",
             "True": "true"
