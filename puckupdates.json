@@ -51,7 +51,7 @@
         "UpdateStageName": "BepInEx Config Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/CodionCA/AMPTemplates/raw/main/puck-bepinex-config.cfg",
+        "UpdateSourceData": "https://github.com/CodionCA/AMPTemplates/raw/PuckPersonal/puck-bepinex-config.cfg",
         "UpdateSourceTarget": "{{$FullBaseDir}}BepInEx/config",
         "UpdateSourceConditionSetting": "BepInExInstall",
         "UpdateSourceConditionValue": "true",
