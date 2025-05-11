@@ -39,6 +39,17 @@
         "SkipOnFailure": false
     },
     {
+        "UpdateStageName": "BepInEx Puck-specific patch replace",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/CodionCA/AMPTemplates/raw/PuckPersonal/puck-Il2CppInterop.Runtime.dll",
+        "UpdateSourceTarget": "{{$FullBaseDir}}BepInEx/core",
+        "UpdateSourceConditionSetting": "BepInExInstall",
+        "UpdateSourceConditionValue": "true",
+        "UpdateSourceArgs": "Il2CppInterop.Runtime.dll",
+        "OverwriteExistingFiles": true
+    },
+    {
         "UpdateStageName": "Create Config Directory",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "CreateDirectory",
