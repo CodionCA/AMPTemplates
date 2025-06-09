@@ -369,38 +369,6 @@
         "EnumValues": {}
     },
     {
-        "DisplayName": "Install BepInEx",
-        "Category": "Updates",
-        "Subcategory": "Runtime Configuration:build:3",
-        "Description": "If set, BepInEx will be installed when the server is updated. Configure \"BepInEx Version\" accordingly. NOTE: Update the server after enabling this option",
-        "Keywords": "install,bepinex",
-        "FieldName": "BepInExInstall",
-        "InputType": "checkbox",
-        "IsFlagArgument": false,
-        "ParamFieldName": "BepInExInstall",
-        "IncludeInCommandLine": false,
-        "DefaultValue": "true",
-        "EnumValues": {
-            "False": "false",
-            "True": "true"
-        }
-    },
-    {
-        "DisplayName": "BepInEx Version",
-        "Category": "Updates",
-        "Subcategory": "Runtime Configuration:build:3",
-        "Description": "Sets the [BepInEx BE Build Version](https://builds.bepinex.dev/projects/bepinex_be) to install. Puck requires BE build, be sure to include build hash. NOTE: Update the server after switching versions!",
-        "Keywords": "install,bepinex,version",
-        "FieldName": "BepInExBuild",
-        "InputType": "text",
-        "IsFlagArgument": false,
-        "ParamFieldName": "BepInExBuild",
-        "IncludeInCommandLine": false,
-        "DefaultValue": "733+995f049",
-        "Placeholder": "733+995f049",
-        "EnumValues": {}
-    },
-    {
         "DisplayName": "Server Branch",
         "Category": "Updates",
         "Subcategory": "Steam Downloads:download",
