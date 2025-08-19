@@ -5,8 +5,7 @@
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "264710",
         "UpdateSourceArgs": "264710",
-        "ForceDownloadPlatform": "Windows",
-        "UpdateSourceVersion": "legacy"
+        "ForceDownloadPlatform": "Windows"
     },
     {
         "UpdateStageName": "Nitrox Directory Creation",
@@ -28,7 +27,7 @@
         "UpdateStageName": "Server.cfg File Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/CubeCoders/AMPTemplates/main/subnautica-legacyserver.cfg",
+        "UpdateSourceData": "https://raw.githubusercontent.com/CubeCoders/AMPTemplates/main/subnautica-server.cfg",
         "UpdateSourceArgs": "server.cfg",
         "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": false
