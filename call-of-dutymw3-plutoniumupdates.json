@@ -65,7 +65,7 @@
         "UpdateStageName": "Plutonium Config Files Download",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/xerxes-at/iw5ServerConfigs/archive/refs/heads/master.zip",
+        "UpdateSourceData": "https://github.com/xerxes-at/IW5ServerConfig/archive/refs/heads/master.zip",
         "UpdateSourceTarget": "{{$FullRootDir}}configs",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
@@ -77,7 +77,7 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "Executable",
         "UpdateSourceData": "/bin/bash",
-        "UpdateSourceArgs": "-c \"\\cp -r -n ./call-of-dutymw3-plutonium/configs/iw5ServerConfigs-master/localappdata/Plutonium/storage/iw5/* ./call-of-dutymw3-plutonium/server/Plutonium/storage/iw5 >/dev/null 2>&1 && rm -rf ./call-of-dutymw3-plutonium/configs/\"",
+        "UpdateSourceArgs": "-c \"\\cp -r -n ./call-of-dutymw3-plutonium/configs/IW5ServerConfigs-master/localappdata/Plutonium/storage/iw5/* ./call-of-dutymw3-plutonium/server/Plutonium/storage/iw5 >/dev/null 2>&1 && rm -rf ./call-of-dutymw3-plutonium/configs/\"",
         "SkipOnFailure": false
     },
     {
@@ -85,7 +85,7 @@
         "UpdateSourcePlatform": "Windows",
         "UpdateSource": "Executable",
         "UpdateSourceData": "cmd.exe",
-        "UpdateSourceArgs": "/C robocopy call-of-dutymw3-plutonium\\configs\\iw5ServerConfigs-master\\localappdata\\Plutonium\\storage\\iw5 call-of-dutymw3-plutonium\\server\\Plutonium\\storage\\iw5 /E /XC /XN /XO > NUL 2>&1 & @if %ERRORLEVEL% GTR 7 (exit /b %ERRORLEVEL%) else (rd /S /Q call-of-dutymw3-plutonium\\configs)",
+        "UpdateSourceArgs": "/C robocopy call-of-dutymw3-plutonium\\configs\\IW5ServerConfigs-master\\localappdata\\Plutonium\\storage\\iw5 call-of-dutymw3-plutonium\\server\\Plutonium\\storage\\iw5 /E /XC /XN /XO > NUL 2>&1 & @if %ERRORLEVEL% GTR 7 (exit /b %ERRORLEVEL%) else (rd /S /Q call-of-dutymw3-plutonium\\configs)",
         "SkipOnFailure": false
     },
     {
