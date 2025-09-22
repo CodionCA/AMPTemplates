@@ -1,9 +1,9 @@
 {
-	"id": "168034dd-01f0-4892-a82c-d18af89f024b",
-	"authors": ["CubeCoders Limited", "AMP Community"],
+	"id": "7d32f4bb-6d40-45d9-a371-cc0fbe7e54d7",
+	"authors": ["Codion"],
 	"origin": "https://github.com/Codion/AMPTemplates.git",
 	"url": "https://github.com/Codion/AMPTemplates",
 	"imagefile": "",
-	"prefix": "CD168",
+	"prefix": "",
 	"repotype": "AppTemplates"
 }
