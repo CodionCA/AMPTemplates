@@ -1,18 +1,9 @@
 [
     {
-        "ConfigFile": "Plutonium/storage/iw5/dedicated.cfg",
+        "ConfigFile": "admin/server.cfg",
         "AutoMap": true,
-        "Importable": true,
         "ConfigType": "kvp",
-        "ConfigFormat": "{0} \"{1}\"",
-        "ConfigFormatRegex": "^(?:\\/\\/)?(?<key>.+?) \"(?<value>.*?)\".*$"
-    },
-    {
-        "ConfigFile": "Plutonium/storage/iw5/dedicated.cfg",
-        "AutoMap": true,
-        "Importable": true,
-        "ConfigType": "kvp",
-        "ConfigFormat": "{0} {1}",
-        "ConfigFormatRegex": "^(?:\\/\\/)?(?<key>[^\"]+?) (?<value>[^\"]*?)(?: .*)?$"
+        "ConfigFormat": "seta {0} \"{1}\"",
+        "ConfigFormatRegex": "^seta (?<key>.+?) \"?(?<value>.*?)\"?$"
     }
 ]
