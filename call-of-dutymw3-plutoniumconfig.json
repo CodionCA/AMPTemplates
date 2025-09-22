@@ -84,7 +84,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "sv_maxclients",
         "IncludeInCommandLine": false,
-        "DefaultValue": "16",
+        "DefaultValue": "18",
         "EnumValues": {}
     },
     {
@@ -128,7 +128,7 @@
         "IsFlagArgument": false,
         "ParamFieldName": "sv_maprotation",
         "IncludeInCommandLine": false,
-        "DefaultValue": "default",
+        "DefaultValue": "dsr TDM_default map mp_rust map mp_terminal_cls map mp_alpha map mp_bootleg map mp_bravo map mp_carbon map mp_dome map mp_exchange map mp_hardhat map mp_interchange map mp_lambeth map mp_mogadishu map mp_paris map mp_plaza2 map mp_radar map mp_seatown map mp_underground map mp_village",
         "EnumValues": {}
     },
     {
@@ -196,7 +196,7 @@
         "MaxValue": "10000",
         "ParamFieldName": "g_inactivity",
         "IncludeInCommandLine": false,
-        "DefaultValue": "120",
+        "DefaultValue": "420",
         "Suffix": "seconds",
         "Placeholder": "0 - 10000",
         "EnumValues": {}
@@ -214,7 +214,7 @@
         "MaxValue": "3600",
         "ParamFieldName": "sv_kickBanTime",
         "IncludeInCommandLine": true,
-        "DefaultValue": "300",
+        "DefaultValue": "3600",
         "Suffix": "seconds",
         "Placeholder": "0 - 3600",
         "EnumValues": {}
@@ -234,6 +234,224 @@
         "EnumValues": {
             "True": "1",
             "False": "0"
+        }
+    },
+    {
+        "DisplayName": "Server MOTD",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Sets a custom message of the day which is shown on the intel message loadscreen when a player joins. Leave blank for default intel messages",
+        "Keywords": "motd,message",
+        "FieldName": "sv_motd",
+        "InputType": "text",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_motd",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Connection Timeout",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Timeout time period. Players will timeout after this many seconds when attempting to connect or if getting connection interruptions",
+        "Keywords": "timeout,connection",
+        "FieldName": "sv_timeout",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "MinValue": "5",
+        "MaxValue": "120",
+        "ParamFieldName": "sv_timeout",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "20",
+        "Suffix": "seconds",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Reconnect Limit",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "How many times a player can try to reconnect",
+        "Keywords": "reconnect,limit",
+        "FieldName": "sv_reconnectlimit",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "MinValue": "1",
+        "MaxValue": "10",
+        "ParamFieldName": "sv_reconnectlimit",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "3",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Voice Quality",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Voice quality level. 3 is default, 9 is maximum quality",
+        "Keywords": "voice,quality",
+        "FieldName": "sv_voicequality",
+        "InputType": "number",
+        "IsFlagArgument": false,
+        "MinValue": "0",
+        "MaxValue": "9",
+        "ParamFieldName": "sv_voicequality",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "3",
+        "EnumValues": {}
+    },
+    {
+        "DisplayName": "Allow Client Console",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Enable or disable players' ability to access server commands",
+        "Keywords": "client,console",
+        "FieldName": "sv_allowClientConsole",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_allowClientConsole",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "True": "1",
+            "False": "0"
+        }
+    },
+    {
+        "DisplayName": "Pure Server",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Verifies client files to ensure they match server files",
+        "Keywords": "pure,verification",
+        "FieldName": "sv_pure",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_pure",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "True": "1",
+            "False": "0"
+        }
+    },
+    {
+        "DisplayName": "Team Balance",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "Balance players on team based games for fair play",
+        "Keywords": "team,balance",
+        "FieldName": "scr_teambalance",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "scr_teambalance",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "True": "1",
+            "False": "0"
+        }
+    },
+    {
+        "DisplayName": "Enable Bounces",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "Enables bouncing on the server",
+        "Keywords": "bounces,movement",
+        "FieldName": "sv_enableBounces",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_enableBounces",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0",
+        "EnumValues": {
+            "True": "1",
+            "False": "0"
+        }
+    },
+    {
+        "DisplayName": "Enable Double Taps",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "Allow double tap on weapon switching",
+        "Keywords": "double,tap,weapon",
+        "FieldName": "sv_enableDoubleTaps",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_enableDoubleTaps",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "True": "1",
+            "False": "0"
+        }
+    },
+    {
+        "DisplayName": "Allow Aim Assist",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "Allow aim assist on gamepads. If disabled, will lock the option on gamepad controls menu",
+        "Keywords": "aim,assist,gamepad",
+        "FieldName": "sv_allowAimAssist",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_allowAimAssist",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "True": "1",
+            "False": "0"
+        }
+    },
+    {
+        "DisplayName": "Allow Third Person Spectator",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "Allow clients to spectate players in third person",
+        "Keywords": "spectator,third,person",
+        "FieldName": "sv_allowThirdPersonSpectator",
+        "InputType": "checkbox",
+        "IsFlagArgument": false,
+        "ParamFieldName": "sv_allowThirdPersonSpectator",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "1",
+        "EnumValues": {
+            "True": "1",
+            "False": "0"
+        }
+    },
+    {
+        "DisplayName": "Player Collision",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "Who player collision applies to",
+        "Keywords": "collision,player",
+        "FieldName": "g_playerCollision",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "g_playerCollision",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0",
+        "EnumValues": {
+            "0": "Everyone",
+            "1": "Enemies Only",
+            "2": "Nobody"
+        }
+    },
+    {
+        "DisplayName": "Player Ejection",
+        "Category": "COD Modern Warfare 3:stadia_controller",
+        "Subcategory": "Gameplay:sports_esports:2",
+        "Description": "Who player ejection applies to",
+        "Keywords": "ejection,player",
+        "FieldName": "g_playerEjection",
+        "InputType": "enum",
+        "IsFlagArgument": false,
+        "ParamFieldName": "g_playerEjection",
+        "IncludeInCommandLine": false,
+        "DefaultValue": "0",
+        "EnumValues": {
+            "0": "Everyone",
+            "1": "Enemies Only",
+            "2": "Nobody"
         }
     }
 ]
