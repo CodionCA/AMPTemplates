@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "admin/server.cfg",
+        "ConfigFile": "iw5/admin/server.cfg",
         "AutoMap": true,
         "ConfigType": "kvp",
         "ConfigFormat": "seta {0} \"{1}\"",
