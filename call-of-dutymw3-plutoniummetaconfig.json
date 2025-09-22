@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "Plutonium/storage/iw5/admin/server.cfg",
+        "ConfigFile": "Plutonium/storage/iw5/dedicated.cfg",
         "AutoMap": true,
         "Importable": true,
         "ConfigType": "kvp",
@@ -8,7 +8,7 @@
         "ConfigFormatRegex": "^(?:\\/\\/)?(?<key>.+?) \"(?<value>.*?)\".*$"
     },
     {
-        "ConfigFile": "Plutonium/storage/iw5/admin/server.cfg",
+        "ConfigFile": "Plutonium/storage/iw5/dedicated.cfg",
         "AutoMap": true,
         "Importable": true,
         "ConfigType": "kvp",
